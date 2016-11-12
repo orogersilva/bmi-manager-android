@@ -27,6 +27,9 @@ android {
         debug {
 
             applicationIdSuffix ".debug"
+
+            ext.betaDistributionGroupAliasesFilePath="${rootProject.getRootDir()}/crashlytics/group_aliases.txt"
+            ext.betaDistributionReleaseNotesFilePath="${rootProject.getRootDir()}/crashlytics/release_notes.txt"
         }
 
         release {
