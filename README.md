@@ -1,3 +1,5 @@
+[![Build Status](https://www.bitrise.io/app/33306d3f60e1125e.svg?token=LXWUxeuIQIZD27tFNuesJg&branch=master)](https://www.bitrise.io/app/33306d3f60e1125e)
+
 Android app to manage BMI.
 
 License
