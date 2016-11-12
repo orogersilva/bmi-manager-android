@@ -25,7 +25,7 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.orogersilva.bmimanager", appContext.getPackageName());
+        assertEquals("com.orogersilva.bmimanager.debug", appContext.getPackageName());
     }
 
     // endregion
