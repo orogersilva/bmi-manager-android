@@ -74,6 +74,14 @@ tasks.withType(Test) {
     }
 }
 
+configurations.all {
+
+    resolutionStrategy {
+        
+        force 'com.android.support:support-annotations:24.2.1'
+    }
+}
+
 dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
