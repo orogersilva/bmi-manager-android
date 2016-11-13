@@ -1,10 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.github.triplet.play'
 
 // Versioning information
 def versionMajor = 0
 def versionMinor = 1
-def versionPatch = 0
+def versionPatch = 1
 
 android {
 
@@ -22,6 +23,17 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+
+        release {
+
+            storeFile rootProject.file('bmimanager.jks')
+            storePassword System.getenv("KEYSTORE_PASSWORD")
+            keyAlias System.getenv("ALIAS_NAME")
+            keyPassword System.getenv("ALIAS_PASSWORD")
+        }
+    }
+
     buildTypes {
 
         debug {
@@ -34,9 +46,21 @@ android {
 
         release {
 
+            signingConfig signingConfigs.release
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ext.betaDistributionGroupAliasesFilePath="${rootProject.getRootDir()}/crashlytics/group_aliases.txt"
+            ext.betaDistributionReleaseNotesFilePath="${rootProject.getRootDir()}/crashlytics/release_notes.txt"
         }
+    }
+
+    play {
+
+        serviceAccountEmail = System.getenv("SERVICE_ACCOUNT_EMAIL")
+        pk12File = rootProject.file('play.p12')
+        track = 'beta'
     }
 }
 

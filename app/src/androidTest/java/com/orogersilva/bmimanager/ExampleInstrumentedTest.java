@@ -19,14 +19,5 @@ public class ExampleInstrumentedTest {
 
     // region TEST METHODS
 
-    @Test
-    public void useAppContext() throws Exception {
-
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
-
-        assertEquals("com.orogersilva.bmimanager.debug", appContext.getPackageName());
-    }
-
     // endregion
 }
