@@ -5,7 +5,7 @@ apply plugin: 'com.github.triplet.play'
 // Versioning information
 def versionMajor = 0
 def versionMinor = 1
-def versionPatch = 1
+def versionPatch = 2
 
 android {
 
@@ -89,4 +89,6 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    androidTestCompile 'com.android.support.test:runner:0.5'
 }
