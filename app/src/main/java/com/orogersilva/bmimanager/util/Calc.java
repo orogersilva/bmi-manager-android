@@ -9,12 +9,12 @@ public class Calc {
     // region STATIC METHODS
 
     /**
-     * Calculate IMC.
+     * Calculate BMI.
      * @param weight (kg).
      * @param height (m).
-     * @return IMC.
+     * @return BMI.
      */
-    public static double calcImc(int weight, double height) {
+    public static double calcBmi(int weight, double height) {
 
         if (height == 0) {
 

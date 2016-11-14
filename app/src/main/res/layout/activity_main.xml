@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.orogersilva.bmimanager.calc.MainActivity"
+    tools:context="com.orogersilva.bmimanager.calcinfo.MainActivity"
     android:fillViewport="true"
     >
 
@@ -62,7 +62,7 @@
                         android:id="@+id/weightEditText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.9"
+                        android:layout_weight="0.8"
                         android:inputType="number"
                         android:textAlignment="textEnd"
                         android:textSize="35sp"
@@ -74,7 +74,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.1"
+                        android:layout_weight="0.2"
                         android:text="@string/kg"
                         android:textSize="@dimen/label_small_size"
                         android:textColor="@color/white"
@@ -165,7 +165,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/calculateImcEditText"
+            android:id="@+id/calculateBmiButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

@@ -91,6 +91,8 @@ dependencies {
     compile("com.crashlytics.sdk.android:crashlytics:$rootProject.crashlyticsLibraryVersion@aar") {
         transitive = true;
     }
+    compile "com.jakewharton:butterknife:$rootProject.butterknifeLibraryVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeLibraryVersion"
 
     testCompile "junit:junit:$rootProject.junitLibraryVersion"
 
