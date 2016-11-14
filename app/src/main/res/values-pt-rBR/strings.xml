@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="calculate_imc">Calcular IMC</string>
+    <string name="centimeter">cm</string>
+    <string name="height">Altura</string>
+    <string name="kg">Kg</string>
+    <string name="meters">m</string>
+    <string name="weight">Peso</string>
+
+</resources>

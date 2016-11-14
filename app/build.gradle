@@ -4,19 +4,19 @@ apply plugin: 'com.github.triplet.play'
 
 // Versioning information
 def versionMajor = 0
-def versionMinor = 1
-def versionPatch = 2
+def versionMinor = 2
+def versionPatch = 0
 
 android {
 
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
 
     defaultConfig {
 
         applicationId "com.orogersilva.bmimanager"
-        minSdkVersion 15
-        targetSdkVersion 24
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch * 1
         versionName "${versionMajor}.${versionMinor}.${versionPatch}-SNAPSHOT"
 
@@ -77,8 +77,8 @@ tasks.withType(Test) {
 configurations.all {
 
     resolutionStrategy {
-        
-        force 'com.android.support:support-annotations:24.2.1'
+
+        force "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
     }
 }
 
@@ -86,15 +86,15 @@ dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
 
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+    compile("com.crashlytics.sdk.android:crashlytics:$rootProject.crashlyticsLibraryVersion@aar") {
         transitive = true;
     }
 
-    testCompile 'junit:junit:4.12'
+    testCompile "junit:junit:$rootProject.junitLibraryVersion"
 
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoLibraryVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     androidTestCompile 'com.android.support.test:rules:0.5'

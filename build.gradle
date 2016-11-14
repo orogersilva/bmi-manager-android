@@ -28,6 +28,22 @@ allprojects {
     }
 }
 
+ext {
+
+    // SDK and tools
+    minSdkVersion = 18
+    targetSdkVersion = 24
+    compileSdkVersion = 24
+    buildToolsVersion = '24.0.2'
+
+    // Dependencies versions
+    supportLibraryVersion = '24.2.1'
+
+    crashlyticsLibraryVersion = '2.6.5'
+    espressoLibraryVersion = '2.2.2'
+    junitLibraryVersion = '4.12'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
