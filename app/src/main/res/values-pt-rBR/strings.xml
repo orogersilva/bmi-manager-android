@@ -1,5 +1,7 @@
 <resources>
 
+    <string name="app_name">BMI Manager</string>
+
     <string name="calculate_imc">Calcular IMC</string>
     <string name="centimeter">cm</string>
     <string name="height">Altura</string>
