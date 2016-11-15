@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+0.5.1 *(2016-11-15)*
+--------------------
+
+ * Internal: Enabling to publish to alpha testing.
+
 0.5.0 *(2016-11-15)*
 --------------------
 
