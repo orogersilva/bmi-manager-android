@@ -61,7 +61,7 @@ android {
         abortOnError false
     }
 
-    testBuildType "release"
+    testBuildType getTestBuildType()
 
     play {
 
@@ -77,6 +77,17 @@ tasks.withType(Test) {
     testLogging {
         events "passed", "failed"
     }
+}
+
+def getTestBuildType() {
+
+    def result = "debug"
+
+    if (project.hasProperty("testBuildType")) {
+        result = project.getProperties().get("testBuildType")
+    }
+
+    return result
 }
 
 configurations.all {
