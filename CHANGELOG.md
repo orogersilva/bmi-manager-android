@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+0.5.0 *(2016-11-15)*
+--------------------
+
+ * New: Screenshot capture in instrumentation tests.
+
 0.4.1 *(2016-11-15)*
 --------------------
 
