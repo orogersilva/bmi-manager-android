@@ -1,7 +1,12 @@
 Change Log
 ==========
 
-0.3.1 *(2016-11-15)*
+0.4.1 *(2016-11-15)*
+--------------------
+
+ * Internal: Getting test build type correctly.
+
+0.4.0 *(2016-11-15)*
 --------------------
 
  * Internal: Adding first instrumented test.
