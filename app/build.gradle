@@ -68,7 +68,7 @@ android {
 
         serviceAccountEmail = System.getenv("SERVICE_ACCOUNT_EMAIL")
         pk12File = rootProject.file('play.p12')
-        track = 'beta'
+        track = 'alpha'
     }
 }
 
