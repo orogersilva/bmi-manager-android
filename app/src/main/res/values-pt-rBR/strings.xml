@@ -2,6 +2,7 @@
 
     <string name="app_name">Gerenciador de IMC</string>
 
+    <string name="bmi_result_support_message">Seu IMC é</string>
     <string name="calculate_imc">Calcular IMC</string>
     <string name="centimeter">cm</string>
     <string name="height">Altura</string>
