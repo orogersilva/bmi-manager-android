@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
 apply plugin: 'com.github.triplet.play'
+apply plugin: 'spoon'
 
 // Versioning information
 def versionMajor = 0
@@ -71,6 +72,11 @@ android {
     }
 }
 
+spoon {
+
+    debug = true
+}
+
 // Show test status in console.
 tasks.withType(Test) {
 
@@ -86,8 +92,6 @@ def obtainTestBuildType() {
     if (project.hasProperty("testBuildType")) {
         result = project.getProperties().get("testBuildType")
     }
-
-    logger.info('The build type is ' + result)
 
     return result
 }
@@ -119,4 +123,6 @@ dependencies {
     })
     androidTestCompile 'com.android.support.test:rules:0.5'
     androidTestCompile 'com.android.support.test:runner:0.5'
+
+    androidTestCompile "com.squareup.spoon:spoon-client:$rootProject.spoonLibraryVersion"
 }
