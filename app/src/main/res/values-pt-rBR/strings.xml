@@ -9,4 +9,13 @@
     <string name="meters">m</string>
     <string name="weight">Peso</string>
 
+    <string name="bmi_level_1">magreza severa</string>
+    <string name="bmi_level_2">magreza moderada</string>
+    <string name="bmi_level_3">magreza leve</string>
+    <string name="bmi_level_4">IMC apropriado</string>
+    <string name="bmi_level_5">sobrepeso</string>
+    <string name="bmi_level_6">obesidade grau 1</string>
+    <string name="bmi_level_7">obesidade grau 2</string>
+    <string name="bmi_level_8">obesidade grau 3</string>
+
 </resources>
