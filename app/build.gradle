@@ -61,7 +61,7 @@ android {
         abortOnError false
     }
 
-    testBuildType getTestBuildType()
+    testBuildType obtainTestBuildType()
 
     play {
 
@@ -79,13 +79,15 @@ tasks.withType(Test) {
     }
 }
 
-def getTestBuildType() {
+def obtainTestBuildType() {
 
     def result = "debug"
 
     if (project.hasProperty("testBuildType")) {
         result = project.getProperties().get("testBuildType")
     }
+
+    logger.info('The build type is ' + result)
 
     return result
 }
