@@ -5,7 +5,7 @@ apply plugin: 'com.github.triplet.play'
 // Versioning information
 def versionMajor = 0
 def versionMinor = 3
-def versionPatch = 0
+def versionPatch = 1
 
 android {
 

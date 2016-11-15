@@ -5,6 +5,7 @@
     <string name="bmi_result_support_message">Seu IMC é</string>
     <string name="calculate_imc">Calcular IMC</string>
     <string name="centimeter">cm</string>
+    <string name="diagnosis_support_message">Você tem</string>
     <string name="height">Altura</string>
     <string name="kg">Kg</string>
     <string name="meters">m</string>
