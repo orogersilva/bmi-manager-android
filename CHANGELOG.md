@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+0.5.2 *(2016-11-15)*
+--------------------
+
+ * Internal: Setting upload of screenshots to Google Play.
+
 0.5.1 *(2016-11-15)*
 --------------------
 
