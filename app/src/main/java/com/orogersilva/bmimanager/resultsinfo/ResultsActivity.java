@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.orogersilva.bmimanager.R;
-import com.orogersilva.bmimanager.calcinfo.MainActivity;
+import com.orogersilva.bmimanager.calcinfo.CalcActivity;
 
 import java.text.DecimalFormat;
 
@@ -42,8 +42,8 @@ public class ResultsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        double bmi = intent.getDoubleExtra(MainActivity.EXTRA_BMI, 0.0);
-        String diagnosisMessage = intent.getStringExtra(MainActivity.EXTRA_DIAGNOSIS);
+        double bmi = intent.getDoubleExtra(CalcActivity.EXTRA_BMI, 0.0);
+        String diagnosisMessage = intent.getStringExtra(CalcActivity.EXTRA_DIAGNOSIS);
 
         DecimalFormat decimalFormat = new DecimalFormat("#.00");
 

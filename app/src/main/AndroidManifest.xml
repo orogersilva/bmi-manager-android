@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".calcinfo.MainActivity">
+        <activity
+            android:name=".calcinfo.CalcActivity"
+            android:label="@string/calc_info">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +23,9 @@
 
         </activity>
 
-        <activity android:name=".resultsinfo.ResultsActivity">
+        <activity
+            android:name=".resultsinfo.ResultsActivity"
+            android:label="@string/results_info">
         </activity>
 
         <meta-data

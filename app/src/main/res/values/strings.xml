@@ -1,6 +1,12 @@
 <resources>
 
+    <!-- SCREEN LABELS -->
+
     <string name="app_name">BMI Manager</string>
+    <string name="calc_info">BMI Manager</string>
+    <string name="results_info">BMI Manager</string>
+
+    <!-- GENERAL STRINGS -->
 
     <string name="bmi_result_support_message">Your BMI is</string>
     <string name="calculate_imc">Calculate IMC</string>
@@ -10,6 +16,8 @@
     <string name="kg">Kg</string>
     <string name="meters">m</string>
     <string name="weight">Weight</string>
+
+    <!-- BMI SEVERITY LEVELS -->
 
     <string name="bmi_level_1">severe thinness</string>
     <string name="bmi_level_2">moderate thinness</string>

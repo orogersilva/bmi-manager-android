@@ -1,9 +1,6 @@
 package com.orogersilva.bmimanager.calcinfo;
 
 import android.app.Activity;
-import android.os.Build;
-import android.os.ParcelFileDescriptor;
-import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.support.test.runner.lifecycle.ActivityLifecycleMonitorRegistry;
@@ -12,7 +9,6 @@ import android.test.suitebuilder.annotation.LargeTest;
 import com.orogersilva.bmimanager.R;
 import com.squareup.spoon.Spoon;
 
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,8 +19,6 @@ import java.util.Collection;
 import java.util.Locale;
 
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
-import static android.support.test.InstrumentationRegistry.getTargetContext;
-import static android.support.test.espresso.Espresso.getIdlingResources;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -43,7 +37,7 @@ public class UC_CalcOfBmi {
     // region FIELDS
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<CalcActivity> mActivityTestRule = new ActivityTestRule<>(CalcActivity.class);
 
     // endregion
 

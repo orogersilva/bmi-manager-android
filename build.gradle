@@ -46,6 +46,7 @@ ext {
     crashlyticsLibraryVersion = '2.6.5'
     espressoLibraryVersion = '2.2.2'
     junitLibraryVersion = '4.12'
+    robolectricLibraryVersion = '3.1.4'
     spoonLibraryVersion = '1.6.4'
 }
 

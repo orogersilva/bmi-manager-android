@@ -1,6 +1,12 @@
 <resources>
 
+    <!-- SCREEN LABELS -->
+
     <string name="app_name">Gerenciador de IMC</string>
+    <string name="calc_info">Gerenciador de IMC</string>
+    <string name="results_info">Gerenciador de IMC</string>
+
+    <!-- GENERAL STRINGS -->
 
     <string name="bmi_result_support_message">Seu IMC é</string>
     <string name="calculate_imc">Calcular IMC</string>
@@ -10,6 +16,8 @@
     <string name="kg">Kg</string>
     <string name="meters">m</string>
     <string name="weight">Peso</string>
+
+    <!-- BMI SEVERITY LEVELS -->
 
     <string name="bmi_level_1">magreza severa</string>
     <string name="bmi_level_2">magreza moderada</string>

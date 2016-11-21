@@ -120,6 +120,7 @@ dependencies {
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeLibraryVersion"
 
     testCompile "junit:junit:$rootProject.junitLibraryVersion"
+    testCompile "org.robolectric:robolectric:$rootProject.robolectricLibraryVersion"
 
     androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.espressoLibraryVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'

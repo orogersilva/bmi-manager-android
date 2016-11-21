@@ -16,11 +16,11 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.fabric.sdk.android.Fabric;
 
-public class MainActivity extends AppCompatActivity {
+public class CalcActivity extends AppCompatActivity {
 
     // region FIELDS
 
-    private final String TAG = "MainActivity";
+    private final String TAG = "CalcActivity";
 
     @BindView(R.id.weightEditText)
     EditText weightEditText;
