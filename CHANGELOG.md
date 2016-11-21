@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+0.6.0 *(2016-11-21)*
+--------------------
+
+ * Internal: Adding first unit tests with Robolectric.
+
 0.5.2 *(2016-11-15)*
 --------------------
 
